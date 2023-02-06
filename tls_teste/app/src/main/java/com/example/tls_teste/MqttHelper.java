@@ -39,9 +39,9 @@ public class MqttHelper {
     public MqttAndroidClient mqttAndroidClient;
 
     private final String serverUri = "ssl://192.168.0.119:8883";
-    private static final String clientId = "TLS_App";
-    private final String username = "csilab";
-    private final String password = "WhoAmI#2020";
+    private static final String clientId = MqttClient.generateClientId();
+    private final String username = "user";
+    private final String password = "senha";
 
     Context context;
 
@@ -101,6 +101,7 @@ public class MqttHelper {
         mqttConnectOptions.setAutomaticReconnect(true);
         mqttConnectOptions.setCleanSession(false);
 
+        //Apenas se necessário
         //mqttConnectOptions.setUserName(username);
         //mqttConnectOptions.setPassword(password.toCharArray());
 

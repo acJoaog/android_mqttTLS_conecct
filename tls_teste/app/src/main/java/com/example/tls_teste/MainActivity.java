@@ -6,6 +6,8 @@ import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.eclipse.paho.android.service.MqttAndroidClient;
@@ -42,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
     // Inicia comunicação com o MQTT
     private void startMqtt() {
+        TextView topic_text = findViewById(R.id.topic_response);
+        TextView message_text = findViewById(R.id.message_response);
+
         mqttHelper = new MqttHelper(getApplicationContext());
         mqttHelper.setCallback(new MqttCallbackExtended() {
             @Override
@@ -59,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
                 Log.w("Debug", mqttMessage.toString());
                 // Exibindo na tela os retornos do Banco de Dados
 
+                topic_text.setText(topic);
+                message_text.setText(mqttMessage.toString());
+                
             }
             @Override
             public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) {
