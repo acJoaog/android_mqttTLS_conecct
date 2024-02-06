@@ -94,7 +94,7 @@ public class MqttHelper {
 
 
         try {
-            InputStream caCrtFile = context.getResources().openRawResource(R.raw.client);
+            InputStream caCrtFile = context.getResources().openRawResource(R.raw.ca);
             mqttConnectOptions.setSocketFactory(getSingleSocketFactory(caCrtFile));
         } catch (Exception e) {
             e.printStackTrace();

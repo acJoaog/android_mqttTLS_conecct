@@ -20,7 +20,7 @@ id view
 layout activity_main
 mipmap ic_launcher
 mipmap ic_launcher_round
-raw client
+raw ca
 string app_name
 style Theme.Tls_teste
 style View

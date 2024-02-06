@@ -3,7 +3,7 @@
     <domain-config>
         <domain includeSubdomains="true">192.168.0.122</domain>
         <trust-anchors>
-            <certificates src="@raw/client"/>
+            <certificates src="@raw/ca"/>
         </trust-anchors>
     </domain-config>
 </network-security-config>

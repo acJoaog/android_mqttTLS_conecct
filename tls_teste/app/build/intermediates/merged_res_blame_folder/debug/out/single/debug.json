@@ -64,6 +64,10 @@
         "source": "C:\\Users\\Jgame\\.gradle\\daemon\\7.4\\com.example.tls_teste.app-main-33:\\drawable\\view.xml"
     },
     {
+        "merged": "com.example.tls_teste.app-merged_res-31:/raw_ca.pem.flat",
+        "source": "com.example.tls_teste.app-main-33:/raw/ca.pem"
+    },
+    {
         "merged": "C:\\Users\\Jgame\\.gradle\\daemon\\7.4\\com.example.tls_teste.app-merged_res-31:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Jgame\\.gradle\\daemon\\7.4\\com.example.tls_teste.app-main-33:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
@@ -80,11 +84,11 @@
         "source": "C:\\Users\\Jgame\\.gradle\\daemon\\7.4\\com.example.tls_teste.app-main-33:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Jgame\\.gradle\\daemon\\7.4\\com.example.tls_teste.app-merged_res-31:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Jgame\\.gradle\\daemon\\7.4\\com.example.tls_teste.app-main-33:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\Jgame\\.gradle\\daemon\\7.4\\com.example.tls_teste.app-merged_res-31:\\xml_network_security_config.xml.flat",
         "source": "C:\\Users\\Jgame\\.gradle\\daemon\\7.4\\com.example.tls_teste.app-main-33:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jgame\\.gradle\\daemon\\7.4\\com.example.tls_teste.app-merged_res-31:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Jgame\\.gradle\\daemon\\7.4\\com.example.tls_teste.app-main-33:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     }
 ]
