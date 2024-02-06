@@ -1,0 +1,29 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable app_bg
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable view
+id botao
+id message
+id message_response
+id topic_response
+id topico
+id view
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+raw client
+string app_name
+style Theme.Tls_teste
+style View
+xml backup_rules
+xml data_extraction_rules
+xml network_security_config

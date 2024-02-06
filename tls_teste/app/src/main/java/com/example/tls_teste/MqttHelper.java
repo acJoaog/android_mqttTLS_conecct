@@ -38,10 +38,8 @@ import javax.net.ssl.TrustManagerFactory;
 public class MqttHelper {
     public MqttAndroidClient mqttAndroidClient;
 
-    private final String serverUri = "ssl://192.168.0.119:8883";
+    private final String serverUri = "ssl://192.168.0.122:8883";
     private static final String clientId = MqttClient.generateClientId();
-    private final String username = "user";
-    private final String password = "senha";
 
     Context context;
 
@@ -53,13 +51,6 @@ public class MqttHelper {
         return clientId;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
 
     public MqttHelper(Context context) {
         mqttAndroidClient = new MqttAndroidClient(context, serverUri, clientId);
@@ -101,12 +92,9 @@ public class MqttHelper {
         mqttConnectOptions.setAutomaticReconnect(true);
         mqttConnectOptions.setCleanSession(false);
 
-        //Apenas se necessário
-        //mqttConnectOptions.setUserName(username);
-        //mqttConnectOptions.setPassword(password.toCharArray());
 
         try {
-            InputStream caCrtFile = context.getResources().openRawResource(R.raw.ca);
+            InputStream caCrtFile = context.getResources().openRawResource(R.raw.client);
             mqttConnectOptions.setSocketFactory(getSingleSocketFactory(caCrtFile));
         } catch (Exception e) {
             e.printStackTrace();
