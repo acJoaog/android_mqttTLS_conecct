@@ -1,4 +1,4 @@
-#Tue Feb 06 19:07:47 BRT 2024
+#Tue Feb 06 19:30:32 BRT 2024
 base.0=C\:\\Users\\Jgame\\OneDrive\\Documentos\\GitHub\\android_mqttTLS_conecct\\tls_teste\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Jgame\\OneDrive\\Documentos\\GitHub\\android_mqttTLS_conecct\\tls_teste\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\Jgame\\OneDrive\\Documentos\\GitHub\\android_mqttTLS_conecct\\tls_teste\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex

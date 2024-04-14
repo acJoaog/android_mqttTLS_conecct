@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.example.tls_teste.R;
+import com.google.api.client.util.SslUtils;
 
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.openssl.PEMKeyPair;
@@ -36,6 +37,12 @@ import javax.net.ssl.TrustManagerFactory;
 
 //Informações do Broker
 public class MqttHelper {
+
+    final String CA_FILE = String.valueOf(R.raw.ca);
+
+    final String CLIENT_CERT_FILE = String.valueOf(R.raw.ca);
+
+    final String CLIENT_KEY_FILE = String.valueOf(R.raw.ca);
     public MqttAndroidClient mqttAndroidClient;
 
     private final String serverUri = "ssl://192.168.0.122:8883";
@@ -96,6 +103,7 @@ public class MqttHelper {
         try {
             InputStream caCrtFile = context.getResources().openRawResource(R.raw.ca);
             mqttConnectOptions.setSocketFactory(getSingleSocketFactory(caCrtFile));
+            mqttConnectOptions.setSocketFactory(SslUtils.getTlsSslContext().init(););
         } catch (Exception e) {
             e.printStackTrace();
         }
