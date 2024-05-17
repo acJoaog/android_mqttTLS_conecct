@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">tls</string>
+    <string name="mqtt_tls_connection">Mqtt TLS Connection!</string>
+</resources>
