@@ -34,7 +34,7 @@ public class MqttHelper {
         client = null;
         try {
             // substitua com o endereço do seu broker
-            String host = "ssl://192.168.0.122:8883";
+            String host = "ssl://192.168.40.8:8883";
             client = new MqttClient(host, clientId, persistence);
             MqttConnectOptions connOpts = new MqttConnectOptions();
 
